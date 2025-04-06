@@ -1,0 +1,3497 @@
+apiVersion: v1
+items:
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-nothing-s10-toward-all
+    namespace: default
+    resourceVersion: "236396"
+    uid: e5905e5c-eb26-47e8-a276-809abc7c9d86
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s10
+      to:
+      - operation:
+          methods:
+          - GET
+          - PUT
+          - DELETE
+          - POST
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-nothing-s12-toward-all
+    namespace: default
+    resourceVersion: "236413"
+    uid: 9870d100-efd6-4e23-bdfc-b913aeb3df4c
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s12
+      to:
+      - operation:
+          methods:
+          - GET
+          - PUT
+          - DELETE
+          - POST
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-nothing-s14-toward-all
+    namespace: default
+    resourceVersion: "236430"
+    uid: b6b90ff4-1640-46b3-b816-15ac75c0fce9
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s14
+      to:
+      - operation:
+          methods:
+          - GET
+          - PUT
+          - DELETE
+          - POST
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-nothing-s15-toward-all
+    namespace: default
+    resourceVersion: "236431"
+    uid: 16c7f432-7c49-47a9-8c54-0a22bc07840e
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s15
+      to:
+      - operation:
+          methods:
+          - GET
+          - PUT
+          - DELETE
+          - POST
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-nothing-s16-toward-all
+    namespace: default
+    resourceVersion: "236432"
+    uid: d0b52168-d67b-4f98-a64b-295f15825b76
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s16
+      to:
+      - operation:
+          methods:
+          - GET
+          - PUT
+          - DELETE
+          - POST
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-nothing-s6-toward-all
+    namespace: default
+    resourceVersion: "236497"
+    uid: d094988f-d706-459c-a879-0f3cda136ff9
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s6
+      to:
+      - operation:
+          methods:
+          - GET
+          - PUT
+          - DELETE
+          - POST
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-nothing-s7-toward-all
+    namespace: default
+    resourceVersion: "236498"
+    uid: caaeb8a3-2319-40c7-b6dd-195ff6721f5c
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s7
+      to:
+      - operation:
+          methods:
+          - GET
+          - PUT
+          - DELETE
+          - POST
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-nothing-s8-toward-all
+    namespace: default
+    resourceVersion: "236499"
+    uid: 8fe3140a-9bae-4105-9b7a-48e60b23d812
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s8
+      to:
+      - operation:
+          methods:
+          - GET
+          - PUT
+          - DELETE
+          - POST
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-nothing-s9-toward-all
+    namespace: default
+    resourceVersion: "236500"
+    uid: 965c863c-d375-4b51-81d9-bef6e57c644f
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s9
+      to:
+      - operation:
+          methods:
+          - GET
+          - PUT
+          - DELETE
+          - POST
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-only-s0-toward-s1
+    namespace: default
+    resourceVersion: "236364"
+    uid: 72eb2bac-46f3-4647-8c1d-d2efc09debc7
+  spec:
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s0
+      to:
+      - operation:
+          methods:
+          - GET
+          - POST
+          - DELETE
+          - PUT
+    selector:
+      matchLabels:
+        app: s1
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-only-s0-toward-s10
+    namespace: default
+    resourceVersion: "236365"
+    uid: 5166f7c8-609d-472b-9bb9-e9653c23c7e8
+  spec:
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s0
+      to:
+      - operation:
+          methods:
+          - GET
+          - POST
+    selector:
+      matchLabels:
+        app: s10
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-only-s0-toward-s2
+    namespace: default
+    resourceVersion: "236366"
+    uid: 40e5ba69-4fda-4e81-9d4f-da9ada34c6ee
+  spec:
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s0
+      to:
+      - operation:
+          methods:
+          - GET
+    selector:
+      matchLabels:
+        app: s2
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-only-s1-toward-s15
+    namespace: default
+    resourceVersion: "236380"
+    uid: a43c6f68-e37a-43cf-852b-312f99fd1c3a
+  spec:
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s1
+      to:
+      - operation:
+          methods:
+          - GET
+          - PUT
+    selector:
+      matchLabels:
+        app: s15
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-only-s11-toward-s13
+    namespace: default
+    resourceVersion: "236397"
+    uid: d5f73c4c-cf84-42e9-af09-dc14739ee98c
+  spec:
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s11
+      to:
+      - operation:
+          methods:
+          - GET
+          - PUT
+    selector:
+      matchLabels:
+        app: s13
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-only-s13-toward-s14
+    namespace: default
+    resourceVersion: "236414"
+    uid: a4ba0cbd-d46a-45de-87d3-44b591acd581
+  spec:
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s13
+      to:
+      - operation:
+          methods:
+          - GET
+          - POST
+          - DELETE
+          - PUT
+    selector:
+      matchLabels:
+        app: s14
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-only-s2-toward-s3
+    namespace: default
+    resourceVersion: "236433"
+    uid: 2a0cef4e-9adb-42bf-857a-0ecf58ba70ed
+  spec:
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s2
+      to:
+      - operation:
+          methods:
+          - GET
+          - PUT
+    selector:
+      matchLabels:
+        app: s3
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-only-s2-toward-s5
+    namespace: default
+    resourceVersion: "236434"
+    uid: 20f13cd7-2514-40a7-842f-9d3a06ce1954
+  spec:
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s2
+      to:
+      - operation:
+          methods:
+          - GET
+          - POST
+          - PUT
+    selector:
+      matchLabels:
+        app: s5
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-only-s2-toward-s6
+    namespace: default
+    resourceVersion: "236435"
+    uid: 808fe6c1-5eb0-4eec-8ae7-c9fcad18bc95
+  spec:
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s2
+      to:
+      - operation:
+          methods:
+          - GET
+          - DELETE
+    selector:
+      matchLabels:
+        app: s6
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-only-s3-toward-s11
+    namespace: default
+    resourceVersion: "236453"
+    uid: cdbe8cef-5c48-4cf6-9aa2-d6a85276065f
+  spec:
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s3
+      to:
+      - operation:
+          methods:
+          - GET
+          - DELETE
+          - PUT
+    selector:
+      matchLabels:
+        app: s11
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-only-s3-toward-s12
+    namespace: default
+    resourceVersion: "236449"
+    uid: 7ede971b-14df-4c0f-a2ca-5ce7a772bd0c
+  spec:
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s3
+      to:
+      - operation:
+          methods:
+          - GET
+          - DELETE
+    selector:
+      matchLabels:
+        app: s12
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-only-s3-toward-s16
+    namespace: default
+    resourceVersion: "236450"
+    uid: 52acc27f-ca15-46ed-bef9-2bd84bfbe742
+  spec:
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s3
+      to:
+      - operation:
+          methods:
+          - GET
+    selector:
+      matchLabels:
+        app: s16
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-only-s3-toward-s4
+    namespace: default
+    resourceVersion: "236451"
+    uid: 06626724-39df-497a-b7d4-646237d3d815
+  spec:
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s3
+      to:
+      - operation:
+          methods:
+          - GET
+          - PUT
+    selector:
+      matchLabels:
+        app: s4
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-only-s3-toward-s7
+    namespace: default
+    resourceVersion: "236452"
+    uid: b5bf0671-5185-4afb-92a7-dd50ccae3e6e
+  spec:
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s3
+      to:
+      - operation:
+          methods:
+          - GET
+          - DELETE
+    selector:
+      matchLabels:
+        app: s7
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-only-s4-toward-s8
+    namespace: default
+    resourceVersion: "236465"
+    uid: f424c9a0-8afc-43ce-a8ad-60b5d336081a
+  spec:
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s4
+      to:
+      - operation:
+          methods:
+          - GET
+          - POST
+          - DELETE
+    selector:
+      matchLabels:
+        app: s8
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: allow-only-s5-toward-s9
+    namespace: default
+    resourceVersion: "236481"
+    uid: af7afd65-af34-4e4d-9946-8f61b155c9d2
+  spec:
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s5
+      to:
+      - operation:
+          methods:
+          - GET
+          - POST
+    selector:
+      matchLabels:
+        app: s9
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s0-toward-s11
+    namespace: default
+    resourceVersion: "236379"
+    uid: 6c709be3-b896-4371-b2c3-c73de0b084f3
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s0
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s11
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s0-toward-s12
+    namespace: default
+    resourceVersion: "236374"
+    uid: 4ad52b76-c284-41f9-9add-7fea77c2a893
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s0
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s12
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s0-toward-s13
+    namespace: default
+    resourceVersion: "236376"
+    uid: 3ffecb3f-5f43-479a-bf46-899ac6a8b0b8
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s0
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s13
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s0-toward-s14
+    namespace: default
+    resourceVersion: "236372"
+    uid: 4185b684-57cb-40ff-961d-ca0a5d762a49
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s0
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s14
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s0-toward-s15
+    namespace: default
+    resourceVersion: "236368"
+    uid: 4af4fb96-6c60-446d-b6c8-ae5e4bc659b9
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s0
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s15
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s0-toward-s16
+    namespace: default
+    resourceVersion: "236369"
+    uid: b1f69e37-d33e-4037-b07a-77ce2f99cc00
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s0
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s16
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s0-toward-s3
+    namespace: default
+    resourceVersion: "236377"
+    uid: 0b7750c5-81c9-4d6e-ac80-896d8dfcab21
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s0
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s3
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s0-toward-s4
+    namespace: default
+    resourceVersion: "236370"
+    uid: 070a243d-8079-4654-965a-38351ace6785
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s0
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s4
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s0-toward-s5
+    namespace: default
+    resourceVersion: "236375"
+    uid: 62eb3708-f299-4424-a9b0-47fd1321ff4b
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s0
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s5
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s0-toward-s6
+    namespace: default
+    resourceVersion: "236373"
+    uid: a520d9eb-2fed-4daa-880b-083475f49f50
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s0
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s6
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s0-toward-s7
+    namespace: default
+    resourceVersion: "236367"
+    uid: 45ba5e57-6774-451e-8e06-220363fe25f9
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s0
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s7
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s0-toward-s8
+    namespace: default
+    resourceVersion: "236371"
+    uid: 125326a9-40cd-4f0e-aa4b-deb00f99075b
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s0
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s8
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s0-toward-s9
+    namespace: default
+    resourceVersion: "236378"
+    uid: be9811c4-86e8-4e39-8d21-37cf50baa5de
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s0
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s9
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s1-toward-s0
+    namespace: default
+    resourceVersion: "236388"
+    uid: ea4730d3-40b9-4950-b5af-bdcbf06245a4
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s1
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s0
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s1-toward-s10
+    namespace: default
+    resourceVersion: "236389"
+    uid: f5a72cfd-fddc-4a41-9ff0-739fabeca064
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s1
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s10
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s1-toward-s11
+    namespace: default
+    resourceVersion: "236393"
+    uid: 8978cab0-8390-4a17-b79c-a8e4bb0f2389
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s1
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s11
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s1-toward-s12
+    namespace: default
+    resourceVersion: "236385"
+    uid: a7332bf6-a585-406c-91f1-00e3035a8ddf
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s1
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s12
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s1-toward-s13
+    namespace: default
+    resourceVersion: "236381"
+    uid: 92032250-1394-4cd8-9c8c-216f933d0fac
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s1
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s13
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s1-toward-s14
+    namespace: default
+    resourceVersion: "236394"
+    uid: 74fdecc6-1add-4d04-b8df-8c0ee9e81a41
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s1
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s14
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s1-toward-s16
+    namespace: default
+    resourceVersion: "236390"
+    uid: d70a9306-7dda-4d7b-bf5f-b4808f6ac93b
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s1
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s16
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s1-toward-s2
+    namespace: default
+    resourceVersion: "236386"
+    uid: 070492d0-5034-4b73-95d5-a113337fd220
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s1
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s2
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s1-toward-s3
+    namespace: default
+    resourceVersion: "236382"
+    uid: d124fe55-1490-46bc-a710-bc7ad4df9e0b
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s1
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s3
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s1-toward-s4
+    namespace: default
+    resourceVersion: "236391"
+    uid: b09ca4cb-fb06-4163-85e0-345cc89902ff
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s1
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s4
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s1-toward-s5
+    namespace: default
+    resourceVersion: "236387"
+    uid: 59f31dbf-b125-4b25-8174-120641e346a2
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s1
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s5
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s1-toward-s6
+    namespace: default
+    resourceVersion: "236395"
+    uid: 93405c51-636e-43a1-b291-ea4bc92785e6
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s1
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s6
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s1-toward-s7
+    namespace: default
+    resourceVersion: "236383"
+    uid: a6bb0f03-3361-47bf-a094-a77818642d24
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s1
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s7
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s1-toward-s8
+    namespace: default
+    resourceVersion: "236384"
+    uid: 4a777c11-d8b6-4b2d-bbf5-779a423793a2
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s1
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s8
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s1-toward-s9
+    namespace: default
+    resourceVersion: "236392"
+    uid: 2d596a42-09a3-4b47-9633-7d13f2e4aaa4
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s1
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s9
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s11-toward-s0
+    namespace: default
+    resourceVersion: "236398"
+    uid: 3ceb79cb-0724-4c25-8fab-406a48bc7d20
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s11
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s0
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s11-toward-s1
+    namespace: default
+    resourceVersion: "236399"
+    uid: 64b88d4c-ef80-4abe-9ece-3e3b5ef14098
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s11
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s1
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s11-toward-s10
+    namespace: default
+    resourceVersion: "236404"
+    uid: ada4ae2b-449c-4921-a2ef-a6dabb19096a
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s11
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s10
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s11-toward-s12
+    namespace: default
+    resourceVersion: "236408"
+    uid: 8ad9d91d-effd-4e10-903f-38bc656619e2
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s11
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s12
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s11-toward-s14
+    namespace: default
+    resourceVersion: "236405"
+    uid: a96b7dd1-bd97-4270-9681-a30d86f92442
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s11
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s14
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s11-toward-s15
+    namespace: default
+    resourceVersion: "236400"
+    uid: f6250e37-1923-4e6d-b319-dc4d3062f815
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s11
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s15
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s11-toward-s16
+    namespace: default
+    resourceVersion: "236409"
+    uid: 99d89e41-e2b5-416d-b46a-3d176632bb67
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s11
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s16
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s11-toward-s2
+    namespace: default
+    resourceVersion: "236401"
+    uid: 73602576-8b4d-411e-a908-d781f63e4c65
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s11
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s2
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s11-toward-s3
+    namespace: default
+    resourceVersion: "236406"
+    uid: 43de81d4-5b4e-4d07-bc3f-95f3c2c1cb2c
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s11
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s3
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s11-toward-s4
+    namespace: default
+    resourceVersion: "236410"
+    uid: 2e56dcda-b139-4e99-b53d-b3d83110b4f1
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s11
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s4
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s11-toward-s5
+    namespace: default
+    resourceVersion: "236411"
+    uid: bb5ed01f-813d-4a77-a71b-e0e6d01dee0a
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s11
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s5
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s11-toward-s6
+    namespace: default
+    resourceVersion: "236412"
+    uid: e1571718-e6d7-48dc-8537-4a4906c9849f
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s11
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s6
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s11-toward-s7
+    namespace: default
+    resourceVersion: "236402"
+    uid: 0d25914f-d2a2-4492-b8b6-55a366bba3b2
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s11
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s7
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s11-toward-s8
+    namespace: default
+    resourceVersion: "236407"
+    uid: ca971bad-184a-4d6a-9b78-e00f0e2d3b3e
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s11
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s8
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s11-toward-s9
+    namespace: default
+    resourceVersion: "236403"
+    uid: 17514547-16ff-4000-aaff-e311a000eeae
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s11
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s9
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s13-toward-s0
+    namespace: default
+    resourceVersion: "236415"
+    uid: 0a54800b-5740-481f-86d3-692cd506d423
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s13
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s0
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s13-toward-s1
+    namespace: default
+    resourceVersion: "236416"
+    uid: 328b8035-2185-4e05-8c6f-2cf0d7b6d09f
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s13
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s1
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s13-toward-s10
+    namespace: default
+    resourceVersion: "236424"
+    uid: 30a8c79f-c4db-4922-b30d-f0c8827bb541
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s13
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s10
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s13-toward-s11
+    namespace: default
+    resourceVersion: "236420"
+    uid: 3f895227-8da9-435b-b0a4-1cb71f077a67
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s13
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s11
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s13-toward-s12
+    namespace: default
+    resourceVersion: "236425"
+    uid: 1f36559e-3458-4638-ab37-8d6611a060fb
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s13
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s12
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s13-toward-s15
+    namespace: default
+    resourceVersion: "236426"
+    uid: 5934bb22-e2ff-4054-9235-44c6d3d00802
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s13
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s15
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s13-toward-s16
+    namespace: default
+    resourceVersion: "236417"
+    uid: 0f8a06da-fdd6-4511-ad0e-cc5a02c4820b
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s13
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s16
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s13-toward-s2
+    namespace: default
+    resourceVersion: "236419"
+    uid: 4764144e-0164-4202-ac45-6406e280c150
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s13
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s2
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s13-toward-s3
+    namespace: default
+    resourceVersion: "236421"
+    uid: e8cfd9a0-478c-4f25-9a01-5fb7368a2612
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s13
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s3
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s13-toward-s4
+    namespace: default
+    resourceVersion: "236427"
+    uid: 2f0dcae1-adcd-4a6d-bd4d-ac77853eedf6
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s13
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s4
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s13-toward-s5
+    namespace: default
+    resourceVersion: "236422"
+    uid: 40d9673f-4414-4386-b64c-c5c46e0e2b7e
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s13
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s5
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s13-toward-s6
+    namespace: default
+    resourceVersion: "236423"
+    uid: 900f668a-857f-4c33-bd74-79d14e2e8e86
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s13
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s6
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s13-toward-s7
+    namespace: default
+    resourceVersion: "236418"
+    uid: d8412e2b-7944-4f16-83ca-4772ffc242c4
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s13
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s7
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s13-toward-s8
+    namespace: default
+    resourceVersion: "236428"
+    uid: e869f469-2e20-48b7-aa44-77a58c637ae5
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s13
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s8
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s13-toward-s9
+    namespace: default
+    resourceVersion: "236429"
+    uid: 455af906-4c69-462e-a091-cb5a43cb943d
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s13
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s9
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s2-toward-s0
+    namespace: default
+    resourceVersion: "236441"
+    uid: f950d95a-1d1d-446f-8ced-371eb0773e89
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s2
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s0
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s2-toward-s1
+    namespace: default
+    resourceVersion: "236436"
+    uid: 5f664d6f-9e37-495a-8745-d27d03bdb707
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s2
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s1
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s2-toward-s10
+    namespace: default
+    resourceVersion: "236437"
+    uid: dac25077-4212-429e-bcbf-3d26d0f273c1
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s2
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s10
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s2-toward-s11
+    namespace: default
+    resourceVersion: "236438"
+    uid: dffb9c68-0963-4a09-9a71-4f88f96bd1c5
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s2
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s11
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s2-toward-s12
+    namespace: default
+    resourceVersion: "236445"
+    uid: 51986959-1559-4ea2-a926-e7d550ac95ad
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s2
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s12
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s2-toward-s13
+    namespace: default
+    resourceVersion: "236446"
+    uid: 1a0ca640-2c60-4b49-97f8-13da1ea5a5a4
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s2
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s13
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s2-toward-s14
+    namespace: default
+    resourceVersion: "236447"
+    uid: fdd97f27-a401-4df1-904d-72e11f3f8a6e
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s2
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s14
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s2-toward-s15
+    namespace: default
+    resourceVersion: "236439"
+    uid: 6e7bdd77-2d41-4a71-89f1-eb3f393f19f8
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s2
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s15
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s2-toward-s16
+    namespace: default
+    resourceVersion: "236442"
+    uid: 137743c5-17fb-450f-a542-69aa682dd847
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s2
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s16
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s2-toward-s4
+    namespace: default
+    resourceVersion: "236440"
+    uid: 5ca2a2af-fac7-4146-a302-eb5f9647a5c5
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s2
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s4
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s2-toward-s7
+    namespace: default
+    resourceVersion: "236443"
+    uid: 574910ce-6391-4067-b521-51e0ea134d83
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s2
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s7
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s2-toward-s8
+    namespace: default
+    resourceVersion: "236448"
+    uid: 1be33c7b-32e6-4d93-ab54-e9df1c355286
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s2
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s8
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s2-toward-s9
+    namespace: default
+    resourceVersion: "236444"
+    uid: 445032c4-fb34-4f55-a314-2a7e6a863b6e
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s2
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s9
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s3-toward-s0
+    namespace: default
+    resourceVersion: "236456"
+    uid: fb7fa7f6-8717-4f64-ae90-b69e530884c5
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s3
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s0
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s3-toward-s1
+    namespace: default
+    resourceVersion: "236458"
+    uid: cf124f42-d05f-4a29-a80a-457244f894c4
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s3
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s1
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s3-toward-s10
+    namespace: default
+    resourceVersion: "236457"
+    uid: 154c62fe-9542-46f7-99ba-6aed204f8b5c
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s3
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s10
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s3-toward-s13
+    namespace: default
+    resourceVersion: "236463"
+    uid: 5859ed6c-6498-49d2-9cd3-c586ccd1b000
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s3
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s13
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s3-toward-s14
+    namespace: default
+    resourceVersion: "236454"
+    uid: 04bb18e3-85ee-4c0a-a726-1fd5e0fc749e
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s3
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s14
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s3-toward-s15
+    namespace: default
+    resourceVersion: "236459"
+    uid: 98c55a5a-5b0d-483c-8a17-28aea0fc1e58
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s3
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s15
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s3-toward-s2
+    namespace: default
+    resourceVersion: "236460"
+    uid: 6cadea48-cac0-4322-b844-11e0a3f063f3
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s3
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s2
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s3-toward-s5
+    namespace: default
+    resourceVersion: "236461"
+    uid: e817b966-5d5f-4dde-b358-f03adf0656e5
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s3
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s5
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s3-toward-s6
+    namespace: default
+    resourceVersion: "236455"
+    uid: 44179c80-7802-4725-9712-300f2016bd35
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s3
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s6
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s3-toward-s8
+    namespace: default
+    resourceVersion: "236462"
+    uid: 2c4882f8-87a3-4b6b-b3ff-9cd17474c003
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s3
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s8
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s3-toward-s9
+    namespace: default
+    resourceVersion: "236464"
+    uid: b2594bbb-0f40-42c7-9f42-4b2a4cdca212
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s3
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s9
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s4-toward-s0
+    namespace: default
+    resourceVersion: "236479"
+    uid: 88f6f80c-c1f7-4f35-b454-017f91ec005f
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s4
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s0
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s4-toward-s1
+    namespace: default
+    resourceVersion: "236473"
+    uid: cc4e33fb-eab7-4223-acc1-7dea5a72324b
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s4
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s1
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s4-toward-s10
+    namespace: default
+    resourceVersion: "236468"
+    uid: 984ccbb6-cc38-4b05-97a9-3527e13e22fc
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s4
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s10
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s4-toward-s11
+    namespace: default
+    resourceVersion: "236466"
+    uid: 3d3535e8-0b60-4ab8-ab7c-b29e0f66cc31
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s4
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s11
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s4-toward-s12
+    namespace: default
+    resourceVersion: "236474"
+    uid: cce96412-7e27-40d6-838e-c8b6828cb825
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s4
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s12
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s4-toward-s13
+    namespace: default
+    resourceVersion: "236480"
+    uid: fe2e3665-9845-45fc-b1f4-5dcb55527859
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s4
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s13
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s4-toward-s14
+    namespace: default
+    resourceVersion: "236475"
+    uid: e1f641f3-7c04-44ec-ad2f-553b03ef8499
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s4
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s14
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s4-toward-s15
+    namespace: default
+    resourceVersion: "236476"
+    uid: 6180f69c-39ce-4e66-803f-81ff87f8e86c
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s4
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s15
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s4-toward-s16
+    namespace: default
+    resourceVersion: "236471"
+    uid: a5b4ccdf-4270-4c1b-9060-55a8186f2918
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s4
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s16
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s4-toward-s2
+    namespace: default
+    resourceVersion: "236467"
+    uid: da04853d-607c-4873-ad4e-78ad5ede5a3f
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s4
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s2
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s4-toward-s3
+    namespace: default
+    resourceVersion: "236472"
+    uid: dcca9afc-1647-4e20-a5bc-c14b6c206e4e
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s4
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s3
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s4-toward-s5
+    namespace: default
+    resourceVersion: "236477"
+    uid: 678f65f3-382c-4142-a732-5fa92057a518
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s4
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s5
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s4-toward-s6
+    namespace: default
+    resourceVersion: "236478"
+    uid: 67855c84-84d3-47ee-830e-fa0b3e7c3bf9
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s4
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s6
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s4-toward-s7
+    namespace: default
+    resourceVersion: "236469"
+    uid: c2fa300b-33a7-4f05-b334-bf8a722bde95
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s4
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s7
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s4-toward-s9
+    namespace: default
+    resourceVersion: "236470"
+    uid: 6f17b35d-fc0f-4794-86ae-d2f82911a02c
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s4
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s9
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s5-toward-s0
+    namespace: default
+    resourceVersion: "236495"
+    uid: dc8e394c-4d3c-46eb-a420-d567edad21eb
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s5
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s0
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s5-toward-s1
+    namespace: default
+    resourceVersion: "236490"
+    uid: b5b91d25-35d6-4178-9da9-5369673241bf
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s5
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s1
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s5-toward-s10
+    namespace: default
+    resourceVersion: "236491"
+    uid: 0574c676-2dd7-453c-a950-5ab6d44639b3
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s5
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s10
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s5-toward-s11
+    namespace: default
+    resourceVersion: "236484"
+    uid: 0956c74d-6141-4b8b-b48e-131d20fce16e
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s5
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s11
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s5-toward-s12
+    namespace: default
+    resourceVersion: "236485"
+    uid: ee034b04-5278-4cd0-94bf-a8e71107a3f5
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s5
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s12
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s5-toward-s13
+    namespace: default
+    resourceVersion: "236492"
+    uid: 1804fc9b-c09b-4aac-ade9-8e61db554066
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s5
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s13
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s5-toward-s14
+    namespace: default
+    resourceVersion: "236487"
+    uid: 77933bb1-06be-4ba6-a082-667b6db02b55
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s5
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s14
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s5-toward-s15
+    namespace: default
+    resourceVersion: "236488"
+    uid: 0f0ca07b-d875-4ba4-9bfe-457683cd76d0
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s5
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s15
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s5-toward-s16
+    namespace: default
+    resourceVersion: "236493"
+    uid: 4c89cab7-dc47-4eb2-88c9-4840585888fd
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s5
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s16
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s5-toward-s2
+    namespace: default
+    resourceVersion: "236496"
+    uid: 5dba7b2c-3a70-47b3-a758-e2df08aed265
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s5
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s2
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s5-toward-s3
+    namespace: default
+    resourceVersion: "236486"
+    uid: 410a3d00-1e9e-4b81-8323-ce78dc7ac1fb
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s5
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s3
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s5-toward-s4
+    namespace: default
+    resourceVersion: "236494"
+    uid: 3d97b0d5-48c1-4807-91cb-4d6297100e62
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s5
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s4
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s5-toward-s6
+    namespace: default
+    resourceVersion: "236489"
+    uid: 03474808-c3f4-45e3-bc89-b3cfb0d08aab
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s5
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s6
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s5-toward-s7
+    namespace: default
+    resourceVersion: "236482"
+    uid: eba084ef-4fbe-4d00-80ef-1c0d2060e7c5
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s5
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s7
+- apiVersion: security.istio.io/v1
+  kind: AuthorizationPolicy
+  metadata:
+    creationTimestamp: "2023-10-01T06:23:05Z"
+    generation: 1
+    name: deny-all-from-s5-toward-s8
+    namespace: default
+    resourceVersion: "236483"
+    uid: c4838c6d-19b1-4297-98db-b5109d5f5e42
+  spec:
+    action: DENY
+    rules:
+    - from:
+      - source:
+          principals:
+          - cluster.local/ns/default/sa/s5
+      to:
+      - operation:
+          methods:
+          - POST
+          - PUT
+          - DELETE
+          - GET
+    selector:
+      matchLabels:
+        app: s8
+kind: List
+metadata:
+  resourceVersion: ""

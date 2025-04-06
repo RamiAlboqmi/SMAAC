@@ -1,0 +1,8 @@
+profile:
+  imports:
+  - href: H-M-M_catalog.yaml
+    include-controls:
+    - with-ids: [control-H-M-M]
+  metadata: {last-modified: '2025-04-04T18:51:33.621305+03:00', oscal-version: 1.0.4,
+    title: Profile-for-services-that-has-s= H-M-M, version: '1743781885'}
+  uuid: b7ab134c-a258-427f-bdd8-e320ca38ec4c

@@ -1,0 +1,10 @@
+catalog:
+  controls:
+  - id: control-H-M-M
+    parts:
+    - {name: PP, prose: 'P:25,M:I,T:50'}
+    title: ' As a service owner for each service that has S= {H, M, M}, set TMAcceptable=90%
+      and the priceToAccess = {gRPC protocol: Price=25, Method=I}'
+  metadata: {last-modified: '2025-04-04T18:51:33.619676+03:00', oscal-version: 1.0.4,
+    title: CaC Controls version H-M-M catalog., version: '1743781885'}
+  uuid: 4d7aa255-6e86-4d1e-a45a-3c81018c5c17

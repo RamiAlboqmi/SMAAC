@@ -1,0 +1,32 @@
+system-security-plan:
+  control-implementation:
+    description: ControlImplementation-1
+    implemented-requirements:
+    - {control-id: control-1.1, uuid: c86e7171-e59d-454c-ad24-c673178ec81c}
+  import-profile: {href: H-L-M_profile.yaml}
+  metadata: {last-modified: '2025-02-21T00:21:16.062264+03:00', oscal-version: 1.0.4,
+    title: SSP-for-profiles-that-has-s= H-L-M, version: '1740086474'}
+  system-characteristics:
+    authorization-boundary: {description: description}
+    description: description
+    security-impact-level: {security-objective-availability: fips-199-low, security-objective-confidentiality: fips-199-low,
+      security-objective-integrity: fips-199-low}
+    security-sensitivity-level: low
+    status: {state: disposition}
+    system-ids:
+    - {id: csp_iaas_system}
+    system-information:
+      information-types:
+      - availability-impact: {base: fips_199_moderate}
+        categorizations:
+        - information-type-ids: [c.3.5.8]
+          system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+        confidentiality-impact: {base: fips_199_moderate}
+        description: InformationTypedescription
+        integrity-impact: {base: fips_199_moderate}
+        title: title
+    system-name: system_name-
+  system-implementation:
+    components: []
+    users: []
+  uuid: c20bd0b0-1424-4d83-a18a-9f4e9b40c97d

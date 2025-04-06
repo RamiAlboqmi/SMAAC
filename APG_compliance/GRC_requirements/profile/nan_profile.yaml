@@ -1,0 +1,8 @@
+profile:
+  imports:
+  - href: nan_catalog.yaml
+    include-controls:
+    - with-ids: [control-nan]
+  metadata: {last-modified: '2025-04-04T18:51:25.632763+03:00', oscal-version: 1.0.4,
+    title: Profile-for-services-that-has-s= nan, version: '1743781885'}
+  uuid: 294d1610-5b7e-4934-a465-4ab07f87ff90

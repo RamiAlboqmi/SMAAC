@@ -1,0 +1,10 @@
+catalog:
+  controls:
+  - id: control-H-M-H
+    parts:
+    - {name: PP, prose: 'G:30,P:10,U:30,D:30,O:50,T:90'}
+    title: ' As a service owner for each service that has S= {H, M, H}, set TMAcceptable=90%
+      and the priceToAccess = {REST protocol: GET=30, POST=10, PUT=30, DELETE=30}'
+  metadata: {last-modified: '2025-04-04T18:51:31.182178+03:00', oscal-version: 1.0.4,
+    title: CaC Controls version H-M-H catalog., version: '1743781885'}
+  uuid: 09beeae5-99c2-41a2-94b1-df33ff750162

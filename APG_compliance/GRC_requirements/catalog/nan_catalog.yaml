@@ -1,0 +1,9 @@
+catalog:
+  controls:
+  - id: control-nan
+    parts:
+    - {name: PP, prose: Main control description}
+    title: 'Main control title '
+  metadata: {last-modified: '2025-04-04T18:51:25.629542+03:00', oscal-version: 1.0.4,
+    title: CaC Controls version nan catalog., version: '1743781885'}
+  uuid: 067f9e2f-88a0-4071-80fd-a9b2b81d23bf

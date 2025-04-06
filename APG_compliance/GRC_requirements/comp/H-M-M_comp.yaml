@@ -1,0 +1,17 @@
+component-definition:
+  components:
+  - control-implementations:
+    - description: ControlImplementation-1
+      implemented-requirements:
+      - {configmap: "apiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: configmap-h-m-m\ndata:\n
+          {'P': '25', 'M': 'I', 'T': '50'}", control-id: control-1.1, description: ControlImplementation-1,
+        uuid: 3d4b4a11-d182-439b-aa4a-387403571766}
+      source: H-M-M_profile.yaml
+      uuid: 18b633ca-8c0b-4725-9449-94752d9cda72
+    description: components-1-description
+    title: components-1
+    type: service
+    uuid: 20280d03-e589-4a54-9f44-38dd5a5be77e
+  metadata: {last-modified: '2025-03-24T15:07:43.197553+03:00', oscal-version: 1.0.4,
+    title: CaC ComponentDefinition 1, version: '1742818060'}
+  uuid: 404195ae-087d-4637-9440-c39f1d629923

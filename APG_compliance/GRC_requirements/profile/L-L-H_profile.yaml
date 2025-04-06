@@ -1,0 +1,8 @@
+profile:
+  imports:
+  - href: L-L-H_catalog.yaml
+    include-controls:
+    - with-ids: [control-L-L-H]
+  metadata: {last-modified: '2025-02-27T03:04:56.999208+03:00', oscal-version: 1.0.4,
+    title: Profile-for-services-that-has-s= L-L-H, version: '1740614695'}
+  uuid: 690ee673-4448-4db6-88c9-efa1b59cfb19
